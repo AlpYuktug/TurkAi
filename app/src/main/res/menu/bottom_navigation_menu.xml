@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentProfile"
+        android:icon="@drawable/profile"
+        android:title="@string/Profile" />
+    <item
+        android:id="@+id/fragmentFlow"
+        android:icon="@drawable/postflow"
+        android:title="@string/PostFlow" />
+    <item
+        android:id="@+id/LogOut"
+        android:icon="@drawable/logout"
+        android:title="@string/LogOut" />
+</menu>

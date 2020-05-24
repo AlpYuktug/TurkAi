@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context=".view.FragmentProfile" >
+
+        <EditText
+            android:id="@+id/editTextPost"
+            android:layout_width="0dp"
+            android:layout_height="370dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewPost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewPost"
+            android:layout_width="250dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="320dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPost"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/editTextPost"
+            app:srcCompat="@drawable/button" />
+
+        <TextView
+            android:id="@+id/textViewPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Share"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewPost"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewPost"
+            app:layout_constraintStart_toStartOf="@+id/imageViewPost"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPost" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

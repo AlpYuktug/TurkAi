@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TurkAi</string>
+
+    <string name="CreateAccount">You Have Successfully Registered! Now, You Can Sign In.</string>
+
+    <string name="Profile">Profile</string>
+    <string name="PostFlow">Post Flow</string>
+    <string name="LogOut">Log Out</string>
+
+    <string name="ChangePassword">Change Password</string>
+
+    <string name="Done">Done</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Share">Share</string>
+
+    <string name="CurrentPassword">Current Password*</string>
+    <string name="NewPassword">New Password*</string>
+    <string name="NewPasswordAgain">Confirm New Password*</string>
+
+    <string name="WrongPassword">Your Current Password Is Incorrect</string>
+    <string name="DontMatchPassword">The Passwords You Entered Dont Match Each Other</string>
+    <string name="MustBlank"> * The Marked Fields Must Be Filled In</string>
+
+    <string name="SignUpButton">Sign Up</string>
+    <string name="SignInButton">Sign In</string>
+    <string name="SignUp">Dont Have An Account? Sign Up Here!</string>
+    <string name="SignIn">Have An Account? Sign In Here!</string>
+
+    <string name="UserName">UserName</string>
+    <string name="Password">Password</string>
+    <string name="WrongEmailPattern">Wrong EMail Format</string>
+    <string name="SameInformation">E-mail Already Taken</string>
+    <string name="WrongInformation">Check Your Information</string>
+    <string name="DontHavaAccount">This E-Mail Dont Registered</string>
+    <string name="SuccesRegistered">You registered successful</string>
+
+    <string name="CheckNetwork">Dont Connect Newtwork</string>
+    <string name="CheckBlank">Please fill blank</string>
+
+
+</resources>
+

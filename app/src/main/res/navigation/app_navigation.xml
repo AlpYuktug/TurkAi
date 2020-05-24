@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_navigation"
+    app:startDestination="@id/fragmentFlow">
+    <fragment
+        android:id="@+id/fragmentFlow"
+        android:name="com.alpyuktug.turkai.view.FragmentFlow"
+        android:label="FragmentFlow" >
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_fragmentCreatePost"
+            app:destination="@id/fragmentCreatePost" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.alpyuktug.turkai.view.FragmentProfile"
+        android:label="FragmentProfile" >
+        <action
+            android:id="@+id/action_fragmentProfile2_to_fragmentFlow"
+            app:destination="@id/fragmentFlow" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCreatePost"
+        android:name="com.alpyuktug.turkai.view.FragmentCreatePost"
+        android:label="FragmentCreatePost" >
+        <action
+            android:id="@+id/action_fragmentCreatePost_to_fragmentFlow"
+            app:destination="@id/fragmentFlow" />
+    </fragment>
+</navigation>
