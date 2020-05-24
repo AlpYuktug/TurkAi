@@ -12,7 +12,7 @@ data class PostList(
     @SerializedName("PostDetail")
     val PostDetail: String?,
     @SerializedName("PostRate")
-    val PostRate: Double?
+    val PostRate: Float?
 )
 
 data class User(

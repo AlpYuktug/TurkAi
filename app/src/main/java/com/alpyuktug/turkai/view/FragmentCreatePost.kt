@@ -60,7 +60,7 @@ class FragmentCreatePost : Fragment() {
         val postdetail = editTextPost!!.text.toString().trim()
         val picture = "https://alperenyukselaltug.com/api/TurkAi/picture/woman.png"
 
-        RetrofitClient.instance.SharePost(email,picture,postdetail,0.0)
+        RetrofitClient.instance.SharePost(email,picture,postdetail,5.0F)
             .enqueue(object: Callback<String> {
                 override fun onFailure(call: Call<String>, t: Throwable) {
                     Toast.makeText(context, t.message, Toast.LENGTH_LONG).show()

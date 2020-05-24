@@ -24,14 +24,16 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/imageViewPost"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084" />
 
         <ImageView
             android:id="@+id/imageViewPost"
             android:layout_width="250dp"
             android:layout_height="68dp"
-            android:layout_marginBottom="320dp"
+            android:layout_marginBottom="240dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/editTextPost"
             app:layout_constraintHorizontal_bias="0.496"

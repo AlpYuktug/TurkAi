@@ -10,6 +10,7 @@ import com.alpyuktug.turkai.util.downloadFromUrl
 import com.alpyuktug.turkai.util.placeholderProgressBar
 import kotlinx.android.synthetic.main.item_flow.view.*
 
+
 class PostListAdapter(val postlist: ArrayList<PostList>):RecyclerView.Adapter<PostListAdapter.PostListViewHolder>() {
 
     class PostListViewHolder(var view: View) : RecyclerView.ViewHolder(view) {
@@ -31,6 +32,7 @@ class PostListAdapter(val postlist: ArrayList<PostList>):RecyclerView.Adapter<Po
 
         holder.view.textViewEMail.text = postlist[position].PostOwnerEMail
         holder.view.textViewDetail.text = postlist[position].PostDetail
+        holder.view.materialRatingBar.rating = postlist[position].PostRate!!
 
         holder.view.ImageViewProfilePicture.downloadFromUrl(postlist[position].PostOwnerPicture,
             placeholderProgressBar(holder.view.context))

@@ -27,7 +27,7 @@ interface APIListWithOutRX {
         @Field("PostOwnerEMail") PostOwnerEMail:String,
         @Field("PostOwnerPicture") PostOwnerPicture:String,
         @Field("PostDetail") PostDetail:String,
-        @Field("PostRate") PostRate:Double
+        @Field("PostRate") PostRate:Float
     ):Call<String>
 
 }

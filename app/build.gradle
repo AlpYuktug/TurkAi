@@ -89,7 +89,7 @@ dependencies {
     implementation "androidx.preference:preference:$preferencesVersion"
 
     //For Rating
-    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'com.borjabravo:simpleratingbar:1.0.0'
     //For Circle Image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     //For EditText
