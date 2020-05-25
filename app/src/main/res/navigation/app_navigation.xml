@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
     app:startDestination="@id/fragmentFlow">
     <fragment
         android:id="@+id/fragmentFlow"
@@ -12,6 +14,9 @@
         <action
             android:id="@+id/action_fragmentFlow_to_fragmentCreatePost"
             app:destination="@id/fragmentCreatePost" />
+        <action
+            android:id="@+id/action_fragmentFlow_to_activityLogin"
+            app:destination="@id/LogOut" />
     </fragment>
     <fragment
         android:id="@+id/fragmentProfile"
@@ -20,6 +25,9 @@
         <action
             android:id="@+id/action_fragmentProfile2_to_fragmentFlow"
             app:destination="@id/fragmentFlow" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_activityLogin"
+            app:destination="@id/LogOut" />
     </fragment>
     <fragment
         android:id="@+id/fragmentCreatePost"
@@ -28,5 +36,13 @@
         <action
             android:id="@+id/action_fragmentCreatePost_to_fragmentFlow"
             app:destination="@id/fragmentFlow" />
+        <action
+            android:id="@+id/action_fragmentCreatePost_to_activityLogin"
+            app:destination="@id/LogOut" />
     </fragment>
+    <activity
+        android:id="@+id/LogOut"
+        android:name="com.alpyuktug.turkai.view.ActivityLogin"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 </navigation>
