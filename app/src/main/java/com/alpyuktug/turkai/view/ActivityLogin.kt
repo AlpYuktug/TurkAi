@@ -89,7 +89,7 @@ class ActivityLogin : AppCompatActivity() {
                     }
                     if(response.body().toString() == "Fail")
                     {
-                        Toast.makeText(applicationContext, "Check Info", Toast.LENGTH_LONG).show()
+                        Toast.makeText(applicationContext, getString(R.string.WrongInformation), Toast.LENGTH_LONG).show()
                     }
 
                 }
@@ -100,7 +100,7 @@ class ActivityLogin : AppCompatActivity() {
 
 
     fun onLoginFailed() {
-        Toast.makeText(baseContext, "Login failed", Toast.LENGTH_LONG).show()
+        Toast.makeText(baseContext, getString(R.string.MustBlank), Toast.LENGTH_LONG).show()
 
         imageViewLogin!!.isEnabled = true
     }

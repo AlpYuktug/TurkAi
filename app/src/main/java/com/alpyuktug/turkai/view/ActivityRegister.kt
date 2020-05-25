@@ -80,7 +80,7 @@ class ActivityRegister : AppCompatActivity() {
                     }
                     if(response.body().toString() == "Fail")
                     {
-                        Toast.makeText(applicationContext, "Email already taken", Toast.LENGTH_LONG).show()
+                        Toast.makeText(applicationContext, getString(R.string.SameInformation), Toast.LENGTH_LONG).show()
                     }
 
                 }
@@ -89,7 +89,7 @@ class ActivityRegister : AppCompatActivity() {
     }
 
     fun onRegisterFailed() {
-        Toast.makeText(baseContext, "Registered failed", Toast.LENGTH_LONG).show()
+        Toast.makeText(baseContext, getString(R.string.MustBlank), Toast.LENGTH_LONG).show()
 
         imageViewSignUp!!.isEnabled = true
     }
